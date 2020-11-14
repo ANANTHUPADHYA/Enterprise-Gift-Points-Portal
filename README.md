@@ -1,2 +1,2 @@
 # CMPE-272
-JobPortal
+JobPortal for job seekers
