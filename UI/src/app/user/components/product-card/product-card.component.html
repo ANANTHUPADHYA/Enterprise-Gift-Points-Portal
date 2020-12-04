@@ -1,0 +1,27 @@
+<mat-card class="example-card card">
+    <mat-card-header>
+        <mat-card-title>{{productDetails.name}}</mat-card-title>
+        <div class="discount" *ngIf="productDetails.discount !== 0">{{productDetails.discount}}<span>%</span></div>
+        <mat-card-subtitle>{{productDetails.category.name}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image *ngIf="productDetails.image===''" src="assets/images/gift.jpg" alt="Image" class="img-thumbnail">
+    <img mat-card-image *ngIf="productDetails.image!==''" src="https://{{productDetails.image}}" alt="Image" class="img-thumbnail">
+    <mat-card-content>
+        <p>
+            {{productDetails.description}}
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <div fxLayout="row wrap" fxLayout.lt-sm="column">
+            <div fxFlex="50%">
+
+
+            </div>
+            <div fxFlex="50%" fxLayoutAlign="flex-end">
+                <span> <strong>{{productDetails.price}} points</strong></span>
+                <mat-icon class="cursor-pointer remove-cart" *ngIf="!showAdd" (click)="removeFromCart()">remove_shopping_cart</mat-icon>
+                <mat-icon class="cursor-pointer add-cart" *ngIf="showAdd" (click)="addToCart()">add_shopping_cart</mat-icon>
+            </div>
+        </div>
+    </mat-card-actions>
+</mat-card>

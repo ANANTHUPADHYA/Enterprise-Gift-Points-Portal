@@ -1,0 +1,49 @@
+.card {
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+    font-family: 'Ubuntu';
+}
+
+.mat-card-subtitle {
+    color: black;
+}
+
+.img-thumbnail {
+    height: 30vh;
+    width: 100%;
+    margin: 0;
+}
+
+.discount {
+    border-radius: 50%;
+    background-color: #de2121;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    line-height: 36px;
+    position: absolute;
+    right: 5px;
+    span {
+        font-size: 8px;
+    }
+}
+
+.checked {
+    color: #ffc107;
+}
+
+.add-cart {
+    color: green;
+}
+
+.remove-cart {
+    color: red;
+}
+
+mat-card-content {
+    height: 14vh;
+    overflow: hidden;
+}
