@@ -1,0 +1,73 @@
+<mat-spinner *ngIf="showSpinner" class="spinner"></mat-spinner>
+<div>
+    <h4 class="header-font">My Cart</h4>
+    <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="flex-start" fxLayoutGap="10px" *ngIf="myCartItems.length">
+        <div fxFlex="calc(60%-10px)" fxFlex.lt-sm="100%">
+
+            <mat-card class="card" *ngFor="let productDetails of myCartItems">
+                <mat-card-content>
+                    <div fxFlex="50%" fxFlex.lt-sm="100%">
+                        <mat-card-title>{{productDetails.product.name}}</mat-card-title>
+                        <mat-card-subtitle>{{productDetails.product.category.name}}</mat-card-subtitle>
+
+                    </div>
+                    <div fxFlex="50%" fxFlex.lt-sm="100%">
+                        <div class="price">Price: &nbsp;{{productDetails.product.price}} points</div>
+                        <div class="discount">Discount: &nbsp;<strong>{{productDetails.product.discount}}%</strong></div>
+                        <div class="offer">Offer Price: &nbsp;<strong>{{this.getOfferPrice(productDetails.product.price, productDetails.product.discount)}} points</strong></div>
+                    </div>
+
+                </mat-card-content>
+                <mat-card-actions>
+                    <div fxFlex="50%">
+                        <button mat-icon-button color="primary" (click)="increaseQuantity(productDetails)"> 
+        <mat-icon>add_circle</mat-icon>
+      </button>
+                        <span>{{productDetails.quantity}}</span>
+                        <button mat-icon-button color="primary" (click)="decreaseQuantity(productDetails)">
+        <mat-icon>remove_circle</mat-icon>
+      </button>
+                    </div>
+                    <div fxFlex="50%" fxLayoutAlign="flex-end">
+                        <mat-icon class="cursor-pointer remove-cart" *ngIf="!showAdd" (click)="removeFromCart(productDetails)">delete</mat-icon>
+                    </div>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+
+        <div fxFlex="40%" fxFlex.lt-sm="100%">
+            <mat-card class="card">
+                <mat-card-content>
+                    <mat-card-title>
+                        <strong>Subtotal(<span>{{this.getTotalItems()}}</span>):&nbsp;&nbsp;</strong>
+                        <span style="color:red">{{this.getTotalPrice()}}</span>
+                    </mat-card-title>
+                    <mat-card-subtitle>
+                        This order contains a gift.
+                    </mat-card-subtitle>
+
+                </mat-card-content>
+                <mat-card-actions>
+                    <mat-form-field style=" width: 100%; font-family: 'Ubuntu';">
+                        <mat-label style="color:purple">Send gift card to this email:</mat-label>
+                        <input matInput placeholder="Send gift card to this email" [formControl]="email" required>
+                        <mat-error>
+                            Please provide a valid email address
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field style=" width: 100%; font-family: 'Ubuntu';">
+                        <mat-label style="color:purple">Message</mat-label>
+                        <input matInput placeholder="Send gift card to this email" [formControl]="message">
+
+                    </mat-form-field>
+
+                    <button mat-raised-button color="primary" (click)="checkOut()">Checkout</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+
+    <div>
+        <h6 class="header-font" *ngIf="!myCartItems.length">Cart is empty!!!! Shop now..</h6>
+    </div>
+</div>
