@@ -10,16 +10,9 @@ S3_BUCKET = os.getenv("S3_BUCKET", None)
 S3_URL = os.getenv("S3_BUCKET", None)
 CLOUD_FRONT_URL = os.getenv("CLOUD_FRONT_URL", None)
 
-TABLE_NAME = "Users"
-VALID_USER_TYPES = ["consumer", "provider"]
-VALID_SKILL_TYPES = ["driver", "electrician", "plumber",
-                     "carpenter", "house maid", "baby sitter",
-                     "elder care", "cook", "nanny", "beautician",
-                     "painter", "delivery boy", "gardener",
-                     "cleaner", "pest control", "decorators"]
 
 CUSTOM_USER_ATTRIBUTE = ["yoyoPoints", "admin"]
-USER_ATTRIBUTE = ["firstName", "lastName", "email"] + CUSTOM_USER_ATTRIBUTE
+USER_ATTRIBUTE = ["firstName", "lastName"] + CUSTOM_USER_ATTRIBUTE
 
 if AWS_ACCESS_KEY_ID is None:
     print("Please set AWS_ACCESS_KEY_ID !!!")
