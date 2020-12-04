@@ -1,0 +1,22 @@
+<div>
+    <h6 class=header-font><strong>Dashboard</strong></h6>
+    <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="flex-start" fxLayoutGap="30px">
+        <mat-card class="card" fxFlex="25%" fxFlex.lt-md="0 1 calc(50% - 32px)" fxFlex.lt-sm="100%" (click)="goToProducts()">
+            <mat-card-title>
+                {{productsCount}}
+            </mat-card-title>
+            <mat-card-subtitle>
+                Products
+            </mat-card-subtitle>
+        </mat-card>
+        <mat-card class="card" fxFlex="25%" fxFlex.lt-md="0 1 calc(50% - 32px)" fxFlex.lt-sm="100%" (click)="goToCategory()">
+            <mat-card-title>
+                {{categoriesCount}}
+            </mat-card-title>
+            <mat-card-subtitle>
+                Categories
+            </mat-card-subtitle>
+        </mat-card>
+    </div>
+
+</div>
