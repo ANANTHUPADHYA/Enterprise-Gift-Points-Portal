@@ -1,0 +1,23 @@
+<div class="container-fluid" style="padding:0" class="main">
+    <div class="row m-3">
+        <div class="col-md-10 col-12">
+            <h6>Recent Reviews</h6>
+        </div>
+        <div class="col-12 col-md-2"><button mat-raised-button color="primary" id="post" (click)="postTweet()">Post Tweet</button></div>
+    </div>
+
+    <div class="row mx-3">
+        <mat-card class="example-card col-md-3 m-3" *ngFor="let tweet of tweets">
+            <mat-card-content>
+                <p style="font-style: italic;">
+                    "{{getTweet(tweet.text)}}"
+                </p>
+                <div><strong>Posted by: </strong><span>{{getUserId(tweet.text)}}</span></div>
+                <span><strong>Date: </strong>{{tweet.created_at | date:'medium'}}</span>
+            </mat-card-content>
+            <mat-card-actions>
+                <!-- <button mat-raised-button color="warn" (click)="deleteTweet(tweet.id_str)" id="del">Delete</button> -->
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
