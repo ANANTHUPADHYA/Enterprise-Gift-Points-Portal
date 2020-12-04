@@ -1,0 +1,58 @@
+<div class="listingTop">
+    <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="20px">
+        <div fxFlex="0 1 calc(50% - 40px)" fxFlex.lt-sm="100%">
+            <mat-form-field class="search fontFamily">
+                <input matInput placeholder="Search products by name" [(ngModel)]="searchKey" (keyup.enter)="searchProducts()" type="text" name="search" (keyup)="keyupFilter()">
+                <span matSuffix fxHide.lt-md (click)="searchProducts()">
+        <mat-icon class="cursor-pointer">search</mat-icon>
+      </span>
+            </mat-form-field>
+        </div>
+
+        <div fxFlex="0 1 calc(50% - 40px)" fxFlex.lt-sm="100%">
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title class="fontFamily">
+                        <i class="material-icons header-icon ">filter_alt</i><span class="filterBox">Filter Products</span>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div fxLayout="row wrap" fxLayout.lt-sm="column">
+                    <div fxFlex="0 1 calc(50% - 40px)" fxFlex.lt-sm="100%">
+                        <mat-label class="fontFamily">Products under price: </mat-label>
+                        <mat-slider thumbLabel [displayWith]="formatLabel" tickInterval="1000" max="10000" [(value)]="priceFilter" class="width100"></mat-slider>
+                    </div>
+                    <mat-form-field fxFlex="0 1 calc(50% - 40px)" fxFlex.lt-sm="100%" class="fontFamily categories">
+                        <mat-label class="fontFamily">Categories</mat-label>
+                        <mat-select multiple name="categories" [(ngModel)]="selectedCategory">
+                            <mat-option class="fontFamily" *ngFor="let category of categories" [value]="category.name">
+                                {{category.name | titlecase}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row wrap" fxLayout.lt-sm="column">
+                    <div fxFlex="0 1 calc(50% - 40px)" fxFlex.lt-sm="100%">
+                        <mat-label class="fontFamily">By Rating: </mat-label>
+                        <mat-slider thumbLabel tickInterval="1" max="5" [(value)]="ratingFilter" class="width100">
+                        </mat-slider>
+                    </div>
+                    <div fxFlex="0 1 calc(50% - 40px)" fxFlex.lt-sm="100%">
+                        <mat-label class="fontFamily">By Discount: </mat-label>
+                        <mat-slider thumbLabel [displayWith]="formatDiscount" tickInterval="5" max="100" [(value)]="discountFilter" class="width100"></mat-slider>
+                    </div>
+                </div>
+                <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="10px">
+                    <button fxFlex="0 1 calc(50% - 32px)" fxFlex.lt-sm="100%" mat-raised-button color="primary" class="fontFamily" (click)="applyFilters()">Apply</button>
+                    <button fxFlex="0 1 calc(50% - 32px)" fxFlex.lt-sm="100%" mat-raised-button color="warn" class="fontFamily" (click)="clearFilters()">Clear</button>
+                </div>
+            </mat-expansion-panel>
+        </div>
+    </div>
+    <div *ngIf="listOfProducts.length" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="flex-start" fxLayoutGap="10px" class="merchDetails">
+        <app-product-card fxFlex="0 1 calc(33.3% - 32px)" fxFlex.lt-md="0 1 calc(50% - 32px)" fxFlex.lt-sm="100%" *ngFor="let product of listOfProducts;" [productDetails]="product"></app-product-card>
+    </div>
+
+    <div fxLayout="row wrap" *ngIf="!listOfProducts.length" class="search">
+        No Products Available.
+    </div>
+</div>
