@@ -1,0 +1,19 @@
+$primary_font: 'Ubuntu';
+
+.card{
+  margin-bottom: 10px;
+  background-color: white;
+  color: black;
+  font-family: $primary_font;
+  cursor: pointer;
+}
+
+.header-font {
+  color: white;
+  font-family: $primary_font;
+  font-size: 20px;
+}
+
+.mat-card-subtitle{
+  color:black;
+}
