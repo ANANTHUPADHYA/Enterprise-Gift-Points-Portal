@@ -9,7 +9,7 @@ from jose.utils import base64url_decode
 
 # utility class to get username, id and to check if token is expired
 
-
+'''
 class JWTTokenUtil():
     def __init__(self, token):
         self.token = token
