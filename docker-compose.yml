@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  cmpe272:
+    image: "cmpe-272:latest"
+    ports:
+      - "9000:9000"
+    env_file:
+      - ./../.env
+    command: ["python3 flask_app.py"]
