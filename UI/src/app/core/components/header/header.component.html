@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <a routerLink="/products" class="remove-underline"> <img src="assets/images/headerIcon.png" class="header-icon"><span class="header-font">Yoyo Gifts</span></a>
+        <div class="points-main" *ngIf="!showLogIn">
+            <div>{{userData?.yoyoPoints}}</div>
+            <div class="sub-points">points</div>
+        </div>
+        <mat-icon *ngIf="!showLogIn" [matBadge]="cartItems" matBadgeColor="warn" class="shopping-cart cursor-pointer" (click)="goToCart()">shopping_cart</mat-icon>
+        <span *ngIf="!showLogIn" class="logout cursor-pointer" (click)="logout()"><mat-icon  title="logout">power_settings_new</mat-icon>&nbsp;Log-out</span>
+        <span *ngIf="showLogIn" class="logout cursor-pointer" (click)="login()"><mat-icon  title="logout">login</mat-icon>&nbsp;Log-in</span>
+        <mat-icon title="admin" class="admin cursor-pointer" *ngIf="!showLogIn && userData?.admin" (click)="goToAdmin()">admin_panel_settings</mat-icon>
+    </mat-toolbar-row>
+</mat-toolbar>

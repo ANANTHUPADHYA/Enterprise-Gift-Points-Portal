@@ -1,0 +1,47 @@
+$secondary_font: 'Great Vibes';
+.header-font {
+  font-family: $secondary_font !important;
+  font-size:28px;
+  color: white;
+    margin-left: 4px;
+}
+
+.header-icon{
+  height: 33px;
+  position: relative;
+  top: 10px;
+}
+
+.logout {
+  position: absolute;
+  right: 2vh;
+  font-family: 'Ubuntu';
+  font-size: initial;
+  mat-icon {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: end;
+  }
+}
+
+.shopping-cart{
+  position: absolute;
+  right: 30vh;
+}
+
+.points-main {
+  font-family: ubuntu;
+    right: 17vh;
+    position: absolute;
+}
+
+.sub-points {
+  font-size: 12px;
+    line-height: 0px;
+    text-align: center;
+}
+
+.admin {
+    right: 36vh;
+    position: absolute;
+}
