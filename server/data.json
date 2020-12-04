@@ -1,0 +1,36 @@
+[{
+    "name": "Rice Cooker-JJ45002",
+    "category": "5f15cfb2a4683f0c0c408498",
+    "rating": 4,
+    "price": 2500,
+    "discount": 10,
+    "description": "The rice cooker is very good and it comes with a non stick coating and the rice or what ever you cook in this will not stick to the base and easy to clean use and it looks good as well. "
+  },{
+    "name": "PHILIPS Multistyler",
+    "category": "5f15cfd2a4683f0c0c408499",
+    "rating": 5,
+    "price": 1365,
+    "discount": 20,
+    "description": "Bring in a fresh change to your looks everyday by styling your hair with this Philips hair styler."
+  },{
+    "name": "PHILIPS Dry Iron",
+    "category": "5f15d163a4683f0c0c40849c",
+    "rating": 2,
+    "price": 5006,
+    "discount": 70,
+    "description": "This dry iron from Philips sports a Golden American Heritage soleplate which allows easy movement on all types of fabrics."
+  },{
+    "name": "PHILIPS Mixer Grinder",
+    "category": "5f15d163a4683f0c0c40849c",
+    "rating": 5,
+    "price": 1365,
+    "discount": 10,
+    "description": "General : . Variant : 3 Jars. Brand : Philips. Type : Mixer Grinder. Model : HL1606/03. Functions : Dry Grinding, Wet Grinding, Chutney Grinding. Color : Green. Power : . Power Input : 230 V. Power Consumption : 500. Functions : . Chutney Jar : 0.3 L. Chutney Grinding : Yes. Wet Grinding : Yes. Dry Grinding : Yes. Grinding Jar : 1 L. Safety Features : . Automatic shut-off : Yes. Additional Features : . : Automatic Shut-off, Power Indicator, Non-slip Feet, Speed Setting (3 and Pulse), 30 min Motor Rating, 0.9 L Multi-purpose Jar, Stainless Steel Material Knife. Dimensions : . Width : 11 inch. Height : 11.5 inch. Depth : 16.5 inch. Weight : 5.7 kg."
+  },{
+    "rating": 5,
+    "discount": 50,
+    "name": "JBL Earphones",
+    "category": "5f1696055a770ed6e8e2d9a3",
+    "price": 2000,
+    "description": "Experience uncompromising JBL sound wherever you are through wired and wireless technology – whether you're traveling, at the gym, or on the go."
+  }]
