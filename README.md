@@ -57,6 +57,18 @@ c2FtcGxldXNlckBnbWFpbC5jb206QFNhbXBsZVVzZXIxMjM0
         * Request Body
             <Pass request body in json as discussed>
 
+            * Sample Data
+        ```
+        {
+            "email": "david@gmail.com",
+            "admin": "true",
+            "firstName": "David",
+            "lastName": "Jhon",
+            "yoyoPoints": "1000"
+        }
+        ```
+
+
 
 3. ```http://<host-name>/account/signout```
 
@@ -81,10 +93,7 @@ c2FtcGxldXNlckBnbWFpbC5jb206QFNhbXBsZVVzZXIxMjM0
 * Sample Data
 ```
 {
-    "email": "david@gmail.com",
-    "admin": "true",
-    "firstName": "David",
-    "lastName": "Jhon",
-    "yoyoPoints": "1000"
+   
+    "yoyoPoints": "2000"
 }
 ```
