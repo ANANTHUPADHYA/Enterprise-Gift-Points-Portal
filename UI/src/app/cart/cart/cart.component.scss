@@ -1,0 +1,51 @@
+$primary_font: 'Ubuntu';
+.header-font {
+    color: white;
+    font-family: $primary_font;
+}
+
+.card {
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+    font-family: 'Ubuntu';
+}
+
+.mat-card-subtitle {
+    color: black;
+}
+
+.remove-cart {
+    color: red;
+}
+
+mat-card-content {
+    height: 14vh;
+    overflow: hidden;
+}
+
+.price {
+    padding: 6px;
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.discount {
+    padding: 6px;
+}
+
+.offer {
+    padding: 6px;
+    color: red;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: black;
+}
+
+.spinner {
+    position: absolute !important;
+    top: 50%;
+    right: 50%;
+    z-index: 99;
+}
