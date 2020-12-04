@@ -1,0 +1,26 @@
+.example-form {
+    min-width: 150px;
+    max-width: 700px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+.card {
+    margin-bottom: 10px;
+    background-color: #272424;
+    color: white;
+    font-family: 'Ubuntu';
+}
+
+.mat-card-subtitle {
+    color: white;
+}
+
+mat-form-field {
+    display: block;
+    color: white;
+    font-family: 'Ubuntu';
+}
