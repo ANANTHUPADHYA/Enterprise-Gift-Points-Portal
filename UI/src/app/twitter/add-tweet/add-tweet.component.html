@@ -1,0 +1,19 @@
+<div style="font-family: 'Ubuntu';">
+    <h5 mat-dialog-title style="font-family: 'Ubuntu';">Post a Tweet</h5>
+    <mat-dialog-content>
+        <form>
+            <mat-form-field style="width:100%">
+                <mat-label style="font-family: 'Ubuntu';">Your Twitter ID:</mat-label>
+                <input style="font-family: 'Ubuntu';" matInput type="text" placeholder="Twitter ID" [(ngModel)]="twitterID" name="twitterID" required>
+            </mat-form-field>
+            <mat-form-field style="width:100%">
+                <mat-label style="font-family: 'Ubuntu';"> Your Experience with Yoyo Gifts:</mat-label>
+                <textarea style="font-family: 'Ubuntu';" matInput cdkTextareaAutosize cdkAutosizeMinRows="6" required name=tweetname [(ngModel)]="tweet"></textarea>
+            </mat-form-field>
+        </form>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <button mat-button mat-dialog-close>Cancel</button>
+        <button mat-button id="postTweet" [mat-dialog-close]="true" [disabled]="tweet==='' || twitterId===''" (click)="postTweet()">Post</button>
+    </mat-dialog-actions>
+</div>
