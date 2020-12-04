@@ -1,0 +1,56 @@
+<div fxFlex>
+    <h5 *ngIf="!productId" style="color: white">Add Product</h5>
+    <h5 *ngIf="productId" style="color: white">Edit Product</h5>
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+        <mat-card class="card">
+            <div>
+                <h6>Enter the Product details:</h6>
+                <form class="example-form" [formGroup]=addEditProductForm>
+                    <div><strong>1. Name</strong></div>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Product Name" formControlName="name">
+                        <mat-error *ngIf="addEditProductForm?.controls?.name?.hasError('required')">
+                            Name is <strong>required</strong>
+                        </mat-error>
+                    </mat-form-field>
+                    <div><strong>2. Description</strong></div>
+                    <mat-form-field class="example-full-width">
+                        <textarea matInput formControlName="description"></textarea>
+                        <mat-error *ngIf="addEditProductForm?.controls?.description?.hasError('required')">
+                            Description is <strong>required</strong>
+                        </mat-error>
+                    </mat-form-field>
+                    <div><strong>3. Category</strong></div>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Choose one</mat-label>
+                        <mat-select formControlName="category">
+                            <mat-option [value]="category._id" *ngFor="let category of categories">{{category.name}}</mat-option>
+                        </mat-select>
+                        <mat-error *ngIf="addEditProductForm?.controls?.category?.hasError('required')">
+                            Category is <strong>required</strong>
+                        </mat-error>
+                    </mat-form-field>
+                    <div><strong>4. Discount</strong></div>
+                    <mat-form-field>
+                        <input matInput formControlName="discount" type="number" placeholder="In percentage">
+                        <mat-error *ngIf="addEditProductForm?.controls?.discount?.hasError('required')">You must make a selection
+                        </mat-error>
+                    </mat-form-field>
+                    <div><strong>5. Price</strong></div>
+                    <mat-form-field class="example-full-width">
+                        <input matInput formControlName="price" type="number" placeholder="In Points">
+                        <mat-error *ngIf="addEditProductForm?.controls?.price?.hasError('required')">
+                            Price is <strong>required</strong>
+                        </mat-error>
+                    </mat-form-field>
+                    <div *ngIf="!productId"><strong>6. Choose File</strong></div>
+                    <input *ngIf="!productId" type="file" id="file" (change)="handleFileInput($event.target.files)" style="padding: 5px;">
+
+                </form>
+                <button mat-raised-button color="primary" *ngIf="!productId" (click)="addProduct()">Submit</button>
+                <button mat-raised-button color="primary" *ngIf="productId" (click)="editProducts()">Edit</button>
+            </div>
+        </mat-card>
+    </div>
+
+</div>
