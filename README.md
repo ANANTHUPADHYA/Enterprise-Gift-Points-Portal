@@ -39,7 +39,7 @@ In our website the customers can register and purchase gift coupons from multipl
 
 
 ###### UML Diagram
-![UML Diagram](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/UML Diagram.png)
+![UML Diagram](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/UML%20diagram.png)
 
 ### Sample Demo Screenshots
 APIs
