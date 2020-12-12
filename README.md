@@ -41,12 +41,23 @@ In our website the customers can register and purchase gift coupons from multipl
 ###### UML Diagram
 ![UML Diagram](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/UML%20diagram.png)
 
-### Sample Demo Screenshots
-APIs
+##### Technology Stack
+      Python3-Flask
+      Python3-Django
+      NodeJS
+      Angular
+      Bootstrap
+      SCSS
+      HTML
+      Angular material
+      Mongo DB
+      AWS Services
+      Docker
 
-* Requirements:
 
-    set following environment variables values:
+### Pre-Requistes 
+
+    Set following environment variables values:
 
     ```
     AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID", None)
@@ -58,10 +69,54 @@ APIs
     S3_URL = os.getenv("S3_BUCKET", None)
     CLOUD_FRONT_URL = os.getenv("CLOUD_FRONT_URL", None)
     ```
-
+    
+    ```
+    Install Node.js -Version 12 https://nodejs.org/en/
+    ```
+    
+  ### Steps for Local Set-up:
+    
+    *  For Authentication & Authorization service, Do the following inside accounts folder
+    
+ 
     ```pip3 install -r requirements.txt```
 
     ```python3 flask_app.py```
+    
+    *For twitter service :
+    
+    ```create a '.env' file in path '/twitterService/twitterService'. Retrieve all consumer & access keys from twitter developer account and paste it in the .env          file as follows.
+    
+      CONSUMER_KEY='Consumer key' 
+      CONSUMER_SECRET='Consumer secret' 
+      ACCESS_KEY='Access key' 
+      ACCESS_SECRET='Access secret'
+    ```
+    
+    ```
+    To Run Django application, run following command under folder 'twitterService':
+    
+    python manage.py runserver
+    ```
+    
+    
+    * For Node server, run following commands inside Server folder:
+    
+    ```
+    npm install
+    npm start
+    ```
+    
+    
+    * For front-end server, do the following in UI folder:
+    
+     ```npm install -g @angular/cli```
+     ```npm install```
+     ```ng serve```
+      Server will be running on ‘http://localhost:4200’ 
+
+
+### API request and response:
 
 * Create new user on terminal
 
