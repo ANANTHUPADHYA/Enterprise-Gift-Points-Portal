@@ -1,4 +1,46 @@
+### University Name: http://www.sjsu.edu/
 
+### Course: CMPE-272, Enterprise Software Platforms
+
+### Professor: Andrew H. Bond
+
+### Team Members
+   ###### ANANTH UPADHYA
+   ###### DEESHA DESAI
+   ###### PREETI PARIHAR
+   ###### PRIYANKA DEVENDRAN
+   
+### Project Introduction
+Gifts Gallery is a portal where the user can purchase e-Gift cards across multiple categories and brand. Gift cards have a huge and effective way to increase profits and are also considered a nearly essential option for businesses to provide. Gift Gallery cards work in similar way to that of regular gift card for in store or online shopping. In our portal we send the gifts gallery cards which can be purchased through points, to the recipient email along with the card code.
+In our website the customers can register and purchase gift coupons from multiple brands online, either for themselves or can send it as gift to friends and family with a personalized message. In corporate world, managers, people leaders can reward their employees for their hard work through Gift Gallery points.
+
+
+ ###### Feature List:
+  
+      1.ADMIN
+        * Add a new product
+        * Delete the product
+        * Edit the product
+        * Add new category
+        * Delete Category
+        * Edit Category
+        * All the features offered to a customer will be offered to admin as well.
+       2. COSTUMER
+        * View all the products
+        * Add a product to cart and checkout with personalized message sent in an email along with gift code.
+        * Filter products by category & name. Sort by price.
+        * Tweet about the product
+        * Read recent tweets made by customers.
+
+       
+###### Architecture Diagram
+
+
+
+###### UML Diagram
+
+
+### Sample Demo Screenshots
 APIs
 
 * Requirements:
