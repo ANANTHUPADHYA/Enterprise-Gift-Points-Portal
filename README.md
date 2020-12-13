@@ -4,13 +4,13 @@
 
 ### Professor: Andrew H. Bond
 
-### Team Members
-   ###### ANANTH UPADHYA
-   ###### DEESHA DESAI
-   ###### PREETI PARIHAR
-   ###### PRIYANKA DEVENDRAN
+###### Team Members
+   ###### ANANTH UPADHYA (015234726)
+   ###### DEESHA DESAI (015135536)
+   ###### PREETI PARIHAR (015218073)
+   ###### PRIYANKA DEVENDRAN (015231411)
    
-### Project Introduction
+###### Project Introduction
 Gifts Gallery is a portal where the user can purchase e-Gift cards across multiple categories and brand. Gift cards have a huge and effective way to increase profits and are also considered a nearly essential option for businesses to provide. Gift Gallery cards work in similar way to that of regular gift card for in store or online shopping. In our portal we send the gifts gallery cards which can be purchased through points, to the recipient email along with the card code.
 In our website the customers can register and purchase gift coupons from multiple brands online, either for themselves or can send it as gift to friends and family with a personalized message. In corporate world, managers, people leaders can reward their employees for their hard work through Gift Gallery points.
 
@@ -41,7 +41,7 @@ In our website the customers can register and purchase gift coupons from multipl
 ###### UML Diagram
 ![UML Diagram](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/UML%20diagram.png)
 
-##### Technology Stack
+###### Technology Stack
       Python3-Flask
       Python3-Django
       NodeJS
@@ -116,82 +116,36 @@ In our website the customers can register and purchase gift coupons from multipl
       Server will be running on ‘http://localhost:4200’ 
 
 
-### API request and response:
+###### Demo Screenshots
+### Login Page
+![Login Page](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Login%20Page.png)
 
-* Create new user on terminal
+### Register Page
+![Register Page](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Register%20Page.png)
 
-```
-    echo -n sampleuser@gmail.com:@SampleUser1234 | base64
-```
-Output
-```
-c2FtcGxldXNlckBnbWFpbC5jb206QFNhbXBsZVVzZXIxMjM0
-```
-
-
-1. ```http://<host-name>/account/signin```
-
-    Request:
-        * Add Authorization Header as follows:
-        ```Authorization: Basic <Base64 username:password>```
-
-    Response:
-        ```{
-            "status": 200,
-            "success": false,
-            "data": {
-                    "accessToken": <access_token>,
-                    "profile":{
-                        <user profile data>
-                    }
-            }
-        }```
-
-2. ```http://<host-name>/account/signup```
-
-    Request:
-        * Add Authorization Header as follows:
-        ```Authorization: Basic <Base64 username:password>```
-        * Request Body
-            <Pass request body in json as discussed>
-
-            * Sample Data
-        ```
-        {
-            "email": "david@gmail.com",
-            "admin": "true",
-            "firstName": "David",
-            "lastName": "Jhon",
-            "yoyoPoints": "1000"
-        }
-        ```
-
-
-
-3. ```http://<host-name>/account/signout```
-
-    Pass access token obtain while signing in as Bearer token in request header
-    Request:
-        * Add Authorization Header as follows:
-        ```Authorization: Bearer <access token>```
-
-
-4. ```http://<host-name>/account/profile```
-
-    Request:
-        * Pass access token obtain while signing in as Bearer token in request header
-        * Pass usertype in path parameter
-        
-            * Add Authorization Header as follows:
-            ```Authorization: Bearer <access token>```
-        * Body: pass request body in json, make sure keyname are matching as discussed
-    
-
-
-* Sample Data
-```
-{
-   
-    "yoyoPoints": "2000"
-}
-```
+### Home Page
+![Home Page](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Home%20Page.png)
+### Home Page Filters
+![Home Page](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Home%20page%20filters.png))
+### Cart Page
+![Cart Page](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Cart%20Page.png)
+### Checkout Page
+![Checkout Page](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Checkout%20Page.png)
+### Reviews Page
+![Reviews](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Reviews.png)
+### Add review Page
+![Add review](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Add%20review.png)
+### After adding review
+![After addding review](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshotsAfter%20addding%20review.png)
+### Login Page
+![UML Diagram](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Login%20Page.png)
+### Admin Home Page
+![Admin Home ](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Admin%20home.png)
+### Categories Page
+![Categories](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Categories.png)
+### Add Category Page
+![Admin Home ](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Add%20categories.png)
+### Admin Products Page
+![Admin Home ](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Admin%20Products.png)
+### Add Product Page
+![Add Product ](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Add%20Product.png)
