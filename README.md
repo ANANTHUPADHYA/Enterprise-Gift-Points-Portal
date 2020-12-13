@@ -121,7 +121,7 @@ In our website the customers can register and purchase gift coupons from multipl
 ![Login Page](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Login%20Page.png)
 
 ### Register Page
-![Register Page](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Register%20Page.png)
+![Register Page](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Register%20page.png)
 
 ### Home Page
 ![Home Page](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Home%20Page.png)
@@ -130,13 +130,13 @@ In our website the customers can register and purchase gift coupons from multipl
 ### Cart Page
 ![Cart Page](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Cart%20Page.png)
 ### Checkout Page
-![Checkout Page](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Checkout%20Page.png)
+![Checkout Page](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Checkout.png)
 ### Reviews Page
 ![Reviews](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Reviews.png)
 ### Add review Page
 ![Add review](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Add%20review.png)
 ### After adding review
-![After addding review](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshotsAfter%20addding%20review.png)
+![After addding review](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/After%20addding%20review.png)
 ### Login Page
 ![UML Diagram](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Login%20Page.png)
 ### Admin Home Page
@@ -146,6 +146,6 @@ In our website the customers can register and purchase gift coupons from multipl
 ### Add Category Page
 ![Admin Home ](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Add%20categories.png)
 ### Admin Products Page
-![Admin Home ](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Admin%20Products.png)
+![Admin Home ](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Admin%20Prodcuts.png)
 ### Add Product Page
 ![Add Product ](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Add%20Product.png)
