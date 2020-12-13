@@ -120,7 +120,7 @@ In our website the customers can register and purchase gift coupons from multipl
 ### Login Page
 ![Login Page](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Login%20Page.png)
 
-### Register Page
+#### Register Page
 ![Register Page](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Register%20page.png)
 
 ### Home Page
@@ -149,3 +149,7 @@ In our website the customers can register and purchase gift coupons from multipl
 ![Admin Home ](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Admin%20Prodcuts.png)
 ### Add Product Page
 ![Add Product ](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Add%20Product.png)
+
+### Triggered Email
+![Email ](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/email.png)
+
