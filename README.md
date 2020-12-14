@@ -153,3 +153,11 @@ In our website the customers can register and purchase gift coupons from multipl
 ### Triggered Email
 ![Email ](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/email.png)
 
+
+###### CICD Setup and Screenshots
+![](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Picture1.png)
+
+![](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Picture2.png)
+
+![](https://github.com/ANANTHUPADHYA/Enterprise-Gift-Points-Portal/blob/main/screenshots/Picture3.png)
+
